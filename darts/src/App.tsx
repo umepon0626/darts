@@ -20,19 +20,19 @@ function App() {
     <div className="app-container">
       <motion.div
         className="text-container"
-        initial={{ x: -100, y: -100, opacity: 0 }}
-        animate={{ x: 0, y: 0, opacity: 1 }}
+        initial={{ x: -100, y: -200, opacity: 0 }}
+        animate={{ x: 90, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="sushi-text">寿司</h1>
+        <h1 className="sushi-text">大山結衣24歳爆誕記念</h1>
       </motion.div>
       <motion.div
         className="text-container"
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: 100, y: 200,opacity: 0 }}
+        animate={{ x: -110, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="darts-text">ダーツ</h1>
+        <h1 className="darts-text">寿司ダーツ</h1>
       </motion.div>
       <motion.button 
         className="down-arrow-button"
