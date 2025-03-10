@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { IoIosArrowUp } from 'react-icons/io'
 
 interface ThirdPageProps {
   isVisible: boolean
@@ -30,10 +31,10 @@ function ThirdPage({ isVisible, onBack }: ThirdPageProps) {
   }
 
   const rewards = [
-    { points: "0点", reward: "スーパーのお寿司" },
-    { points: "1~100点", reward: "回転寿司" },
-    { points: "101~200点", reward: "1万円のお寿司" },
-    { points: "200点以上", reward: "3万円のお寿司" }
+    { points: "0点", reward: "スーパーのお惣菜" },
+    { points: "1~100点", reward: "はま寿司" },
+    { points: "101~200点", reward: "1万円までのお寿司" },
+    { points: "200点以上", reward: "3万円までのお寿司" }
   ]
 
   return (
@@ -52,9 +53,7 @@ function ThirdPage({ isVisible, onBack }: ThirdPageProps) {
         whileTap={{ scale: 0.95 }}
         onClick={onBack}
       >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 19L5 12L12 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+        <IoIosArrowUp size={24} color="white" />
       </motion.button>
       <motion.div 
         className="rewards-container"
@@ -76,7 +75,6 @@ function ThirdPage({ isVisible, onBack }: ThirdPageProps) {
           ))}
         </motion.div>
       </motion.div>
-      
     </motion.div>
   )
 }

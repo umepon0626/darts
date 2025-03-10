@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { IoIosArrowDown } from 'react-icons/io'
 import SecondPage from './components/SecondPage'
 import ThirdPage from './components/ThirdPage'
 import './App.css'
@@ -42,9 +43,7 @@ function App() {
         whileTap={{ scale: 0.95 }}
         onClick={handleButtonClick}
       >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7 10L12 15L17 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+        <IoIosArrowDown size={24} color="white" />
       </motion.button>
       <SecondPage isVisible={currentPage >= 2} onNext={handleButtonClick} />
       <ThirdPage isVisible={currentPage >= 3} onBack={handleBackClick} />
